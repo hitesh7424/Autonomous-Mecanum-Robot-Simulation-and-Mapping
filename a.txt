@@ -1,240 +1,408 @@
-[INFO] [launch]: All log files can be found below /home/hitesh/.ros/log/2026-06-25-15-06-08-397604-Rusky-546849
+[INFO] [launch]: All log files can be found below /home/hitesh/.ros/log/2026-06-25-18-57-06-932691-Rusky-63839
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [robot_state_publisher-1]: process started with pid [546877]
-[INFO] [rviz2-2]: process started with pid [546878]
-[INFO] [gazebo-3]: process started with pid [546879]
-[INFO] [gazebo-4]: process started with pid [546880]
-[INFO] [parameter_bridge-5]: process started with pid [546881]
-[INFO] [image_bridge-6]: process started with pid [546882]
-[INFO] [create-7]: process started with pid [546885]
-[robot_state_publisher-1] [INFO] [1782380169.070773277] [robot_state_publisher]: Robot initialized
-[create-7] [INFO] [1782380169.085425613] [ros_gz_sim]: Requesting list of world names.
-[rviz2-2] [INFO] [1782380169.307707723] [rviz2]: Stereo is NOT SUPPORTED
-[rviz2-2] [INFO] [1782380169.307753266] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
-[rviz2-2] [INFO] [1782380169.323899720] [rviz2]: Stereo is NOT SUPPORTED
-[gazebo-3] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.11.0[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_gazebo/share/autobot_gazebo/worlds/empty.world[0m[1;32m].[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;36m[Dbg] [Physics.cc:906] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/default/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/default/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/default/remove[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/default/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/default/light_config[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/default/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/default/set_physics[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/default/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/default/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/default/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/default/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/default/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/default/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/default/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/visual_config[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
-[create-7] [INFO] [1782380169.510425448] [ros_gz_sim]: Waiting messages on topic [/robot_description].
-[create-7] [INFO] [1782380169.609608294] [ros_gz_sim]: Entity creation successful.
-[INFO] [create-7]: process has finished cleanly [pid 546885]
-[parameter_bridge-5] [INFO] [1782380170.089892814] [ros_gz_bridge]: Creating GZ->ROS Bridge: [rgbd_camera/camera_info (gz.msgs.CameraInfo) -> rgbd_camera/color/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 1)
-[parameter_bridge-5] [INFO] [1782380170.092075400] [ros_gz_bridge]: Creating GZ->ROS Bridge: [rgbd_camera/points (gz.msgs.PointCloudPacked) -> rgbd_camera/depth/color/points (sensor_msgs/msg/PointCloud2)] (Lazy 1)
-[parameter_bridge-5] [INFO] [1782380170.092572237] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
-[parameter_bridge-5] [INFO] [1782380170.093220836] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu/data (gz.msgs.IMU) -> imu/data (sensor_msgs/msg/Imu)] (Lazy 0)
-[parameter_bridge-5] [INFO] [1782380170.094130670] [ros_gz_bridge]: Creating ROS->GZ Bridge: [mecanum_drive_controller/cmd_vel (geometry_msgs/msg/TwistStamped) -> mecanum_drive_controller/cmd_vel (gz.msgs.Twist)] (Lazy 0)
-[parameter_bridge-5] [INFO] [1782380170.095222738] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
-[gazebo-4] libEGL warning: pci id for fd 89: 10de:28a1, driver (null)
+[INFO] [joint_state_publisher-1]: process started with pid [63855]
+[INFO] [robot_state_publisher-2]: process started with pid [63857]
+[INFO] [rviz2-3]: process started with pid [63858]
+[INFO] [gazebo-4]: process started with pid [63859]
+[INFO] [gazebo-5]: process started with pid [63860]
+[INFO] [parameter_bridge-6]: process started with pid [63861]
+[INFO] [image_bridge-7]: process started with pid [63862]
+[INFO] [create-8]: process started with pid [63865]
+[robot_state_publisher-2] [INFO] [1782394027.587728953] [robot_state_publisher]: Robot initialized
+[create-8] [INFO] [1782394027.604128632] [ros_gz_sim]: Requesting list of world names.
+[rviz2-3] [INFO] [1782394027.812944511] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1782394027.813003608] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-3] [INFO] [1782394027.830653242] [rviz2]: Stereo is NOT SUPPORTED
+[joint_state_publisher-1] [INFO] [1782394027.894702732] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+[joint_state_publisher-1] [INFO] [1782394028.139867245] [joint_state_publisher]: Got description, configuring robot
+[parameter_bridge-6] [INFO] [1782394028.596355219] [ros_gz_bridge]: Creating GZ->ROS Bridge: [rgbd_camera/camera_info (gz.msgs.CameraInfo) -> rgbd_camera/color/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 1)
+[parameter_bridge-6] [INFO] [1782394028.598962734] [ros_gz_bridge]: Creating GZ->ROS Bridge: [rgbd_camera/points (gz.msgs.PointCloudPacked) -> rgbd_camera/depth/color/points (sensor_msgs/msg/PointCloud2)] (Lazy 1)
+[parameter_bridge-6] [INFO] [1782394028.599651957] [ros_gz_bridge]: Creating GZ->ROS Bridge: [scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1782394028.600153449] [ros_gz_bridge]: Creating GZ->ROS Bridge: [imu/data (gz.msgs.IMU) -> imu/data (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1782394028.600659375] [ros_gz_bridge]: Creating ROS->GZ Bridge: [mecanum_drive_controller/cmd_vel (geometry_msgs/msg/TwistStamped) -> mecanum_drive_controller/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-6] [INFO] [1782394028.601384105] [ros_gz_bridge]: Creating GZ->ROS Bridge: [clock (gz.msgs.Clock) -> clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[gazebo-4] [1;32m[Msg] [0m[1;32mGazebo Sim Server v[0m[1;32m8.11.0[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_gazebo/share/autobot_gazebo/worlds/house.world[0m[1;32m].[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;36m[Dbg] [Physics.cc:906] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/default/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/default/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/default/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/default/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/default/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/default/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/default/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/default/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/default/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/default/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/default/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/default/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/default/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/default/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/default/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/default/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[create-8] [INFO] [1782394029.407431821] [ros_gz_sim]: Waiting messages on topic [/robot_description].
+[create-8] [INFO] [1782394029.506742128] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-8]: process has finished cleanly [pid 63865]
+[gazebo-4] [INFO] [1782394029.813931855] [gz_ros_control]: Loading controller_manager
+[gazebo-4] [INFO] [1782394029.828815376] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-4] [INFO] [1782394029.833156311] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-4] [WARN] [1782394029.835259295] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-4] [INFO] [1782394030.330481990] [controller_manager]: Received robot description from topic.
+[gazebo-4] [INFO] [1782394030.330534633] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-4] [INFO] [1782394030.337223669] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-4] [INFO] [1782394030.337297532] [gz_ros_control]: Loading joint: front_left_wheel_joint
+[gazebo-4] [INFO] [1782394030.337302467] [gz_ros_control]: 	State:
+[gazebo-4] [INFO] [1782394030.337307797] [gz_ros_control]: 		 position
+[gazebo-4] [INFO] [1782394030.337312749] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337317938] [gz_ros_control]: 	Command:
+[gazebo-4] [INFO] [1782394030.337320519] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337332261] [gz_ros_control]: Loading joint: front_right_wheel_joint
+[gazebo-4] [INFO] [1782394030.337335468] [gz_ros_control]: 	State:
+[gazebo-4] [INFO] [1782394030.337342583] [gz_ros_control]: 		 position
+[gazebo-4] [INFO] [1782394030.337345467] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337347453] [gz_ros_control]: 	Command:
+[gazebo-4] [INFO] [1782394030.337349375] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337356107] [gz_ros_control]: Loading joint: back_left_wheel_joint
+[gazebo-4] [INFO] [1782394030.337358120] [gz_ros_control]: 	State:
+[gazebo-4] [INFO] [1782394030.337360032] [gz_ros_control]: 		 position
+[gazebo-4] [INFO] [1782394030.337362396] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337364195] [gz_ros_control]: 	Command:
+[gazebo-4] [INFO] [1782394030.337365879] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337373684] [gz_ros_control]: Loading joint: back_right_wheel_joint
+[gazebo-4] [INFO] [1782394030.337375397] [gz_ros_control]: 	State:
+[gazebo-4] [INFO] [1782394030.337377193] [gz_ros_control]: 		 position
+[gazebo-4] [INFO] [1782394030.337379075] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337380838] [gz_ros_control]: 	Command:
+[gazebo-4] [INFO] [1782394030.337382570] [gz_ros_control]: 		 velocity
+[gazebo-4] [INFO] [1782394030.337579583] [controller_manager]: Initialize hardware 'RobotSystem' 
+[gazebo-4] [WARN] [1782394030.337593356] [controller_manager.hardware_component.system.RobotSystem]: Executor is not available during hardware component initialization for 'RobotSystem'. Skipping node creation!
+[gazebo-4] [INFO] [1782394030.337637894] [controller_manager]: Successful initialization of hardware 'RobotSystem'
+[gazebo-4] [INFO] [1782394030.337716265] [controller_manager]: Activating component 'RobotSystem'.
+[gazebo-4] [INFO] [1782394030.337724321] [resource_manager]: 'configure' hardware 'RobotSystem' 
+[gazebo-4] [INFO] [1782394030.337727734] [gz_ros_control]: System Successfully configured!
+[gazebo-4] [INFO] [1782394030.337730514] [resource_manager]: Successful 'configure' of hardware 'RobotSystem'
+[gazebo-4] [INFO] [1782394030.337735933] [resource_manager]: 'activate' hardware 'RobotSystem' 
+[gazebo-4] [INFO] [1782394030.337744844] [resource_manager]: Successful 'activate' of hardware 'RobotSystem'
+[gazebo-4] [WARN] [1782394030.337798731] [controller_manager]: Component 'RobotSystem' does not have read or write statistics initialized, skipping registration.
+[gazebo-4] [INFO] [1782394030.337803274] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Imu[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/default[0m[1;32m/control], [[0m[1;32m/world/default[0m[1;32m/control/state] and [[0m[1;32m/world/default[0m[1;32m/playback/control][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mdefault[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:551] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m4[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLinear velocity initialized to [[0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mAngular velocity initialized to [[0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mVelocityControl subscribing to twist messages on [[0m[1;32mmecanum_drive_controller/cmd_vel[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::VelocityControl[0m[1;36m] for entity [[0m[1;36m456[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz_ros2_control::GazeboSimROS2ControlPlugin[0m[1;36m] for entity [[0m[1;36m456[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [UserCommands.cc:1094] [0m[1;36mCreated entity [[0m[1;36m456[0m[1;36m] named [[0m[1;36mautobot[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;33mWarning [Inertia.cpp:233][0m [Inertia::verifyMoment] Invalid entry for (1,1): 0. Value should be positive and greater than zero.
+[gazebo-4] [1;33mWarning [Inertia.cpp:149][0m [Inertia::setMoment] Passing in an invalid moment of inertia matrix. Results might not by physically accurate or meaningful.
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mcollision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__base_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__laser_frame_collision_1[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__rgbd_camera_link_collision_2[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mback_left_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mback_right_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mfront_left_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
+[gazebo-4] [WARN] [1782394031.939368075] [gz_ros_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-4] libEGL warning: pci id for fd 92: 10de:28a1, driver (null)
 [gazebo-4] 
-[gazebo-4] pci id for fd 90: 10de:28a1, driver (null)
-[gazebo-4] pci id for fd 91: 10de:28a1, driver (null)
+[gazebo-5] libEGL warning: pci id for fd 88: 10de:28a1, driver (null)
+[gazebo-5] 
+[gazebo-4] pci id for fd 93: 10de:28a1, driver (null)
+[gazebo-4] pci id for fd 94: 10de:28a1, driver (null)
 [gazebo-4] libEGL warning: egl: failed to create dri2 screen
-[gazebo-4] libEGL warning: pci id for fd 89: 10de:28a1, driver (null)
+[gazebo-5] pci id for fd 89: 10de:28a1, driver (null)
+[gazebo-4] libEGL warning: pci id for fd 92: 10de:28a1, driver (null)
 [gazebo-4] 
-[gazebo-4] pci id for fd 90: 10de:28a1, driver (null)
-[gazebo-4] pci id for fd 91: 10de:28a1, driver (null)
+[gazebo-5] pci id for fd 90: 10de:28a1, driver (null)
+[gazebo-5] libEGL warning: egl: failed to create dri2 screen
+[gazebo-4] pci id for fd 93: 10de:28a1, driver (null)
+[gazebo-4] pci id for fd 94: 10de:28a1, driver (null)
 [gazebo-4] libEGL warning: egl: failed to create dri2 screen
-[gazebo-4] libEGL warning: pci id for fd 89: 10de:28a1, driver (null)
+[gazebo-5] libEGL warning: pci id for fd 88: 10de:28a1, driver (null)
+[gazebo-5] 
+[gazebo-4] libEGL warning: pci id for fd 92: 10de:28a1, driver (null)
 [gazebo-4] 
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Imu[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/default[0m[1;32m/control], [[0m[1;32m/world/default[0m[1;32m/control/state] and [[0m[1;32m/world/default[0m[1;32m/playback/control][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mdefault[0m[1;32m] initialized with [[0m[1;32mdefault_physics[0m[1;32m] physics profile.[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:551] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m4[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="autobot"]/link[@name="base_footprint"]/sensor[@name="lidar_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-[gazebo-3] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="autobot"]/link[@name="base_footprint"]/sensor[@name="rgbd_camera"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-[gazebo-3] [INFO] [1782380171.285193687] [gz_ros_control]: Loading controller_manager
-[gazebo-3] [INFO] [1782380171.304201862] [controller_manager]: Using ROS clock for triggering controller manager cycles.
-[gazebo-3] [INFO] [1782380171.308581217] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
-[gazebo-3] [WARN] [1782380171.311457595] [gz_ros_control]: Waiting RM to load and initialize hardware...
-[gazebo-3] [INFO] [1782380171.577877809] [controller_manager]: Received robot description from topic.
-[gazebo-3] [INFO] [1782380171.577937465] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
-[gazebo-3] [INFO] [1782380171.582264945] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
-[gazebo-3] [INFO] [1782380171.582326780] [gz_ros_control]: Loading joint: front_left_wheel_joint
-[gazebo-3] [INFO] [1782380171.582334237] [gz_ros_control]: 	State:
-[gazebo-3] [INFO] [1782380171.582337921] [gz_ros_control]: 		 position
-[gazebo-3] [INFO] [1782380171.582341721] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582346480] [gz_ros_control]: 	Command:
-[gazebo-3] [INFO] [1782380171.582348457] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582356775] [gz_ros_control]: Loading joint: front_right_wheel_joint
-[gazebo-3] [INFO] [1782380171.582358823] [gz_ros_control]: 	State:
-[gazebo-3] [INFO] [1782380171.582360803] [gz_ros_control]: 		 position
-[gazebo-3] [INFO] [1782380171.582363206] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582364968] [gz_ros_control]: 	Command:
-[gazebo-3] [INFO] [1782380171.582366531] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582372389] [gz_ros_control]: Loading joint: back_left_wheel_joint
-[gazebo-3] [INFO] [1782380171.582374184] [gz_ros_control]: 	State:
-[gazebo-3] [INFO] [1782380171.582375972] [gz_ros_control]: 		 position
-[gazebo-3] [INFO] [1782380171.582378230] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582380000] [gz_ros_control]: 	Command:
-[gazebo-3] [INFO] [1782380171.582381598] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582390997] [gz_ros_control]: Loading joint: back_right_wheel_joint
-[gazebo-3] [INFO] [1782380171.582392791] [gz_ros_control]: 	State:
-[gazebo-3] [INFO] [1782380171.582400712] [gz_ros_control]: 		 position
-[gazebo-3] [INFO] [1782380171.582403589] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582406165] [gz_ros_control]: 	Command:
-[gazebo-3] [INFO] [1782380171.582408743] [gz_ros_control]: 		 velocity
-[gazebo-3] [INFO] [1782380171.582486830] [controller_manager]: Initialize hardware 'RobotSystem' 
-[gazebo-3] [WARN] [1782380171.582500001] [controller_manager.hardware_component.system.RobotSystem]: Executor is not available during hardware component initialization for 'RobotSystem'. Skipping node creation!
-[gazebo-3] [INFO] [1782380171.582540093] [controller_manager]: Successful initialization of hardware 'RobotSystem'
-[gazebo-3] [INFO] [1782380171.582618442] [controller_manager]: Activating component 'RobotSystem'.
-[gazebo-3] [INFO] [1782380171.582626946] [resource_manager]: 'configure' hardware 'RobotSystem' 
-[gazebo-3] [INFO] [1782380171.582629977] [gz_ros_control]: System Successfully configured!
-[gazebo-3] [INFO] [1782380171.582634752] [resource_manager]: Successful 'configure' of hardware 'RobotSystem'
-[gazebo-3] [INFO] [1782380171.582639343] [resource_manager]: 'activate' hardware 'RobotSystem' 
-[gazebo-3] [INFO] [1782380171.582646774] [resource_manager]: Successful 'activate' of hardware 'RobotSystem'
-[gazebo-3] [WARN] [1782380171.582697330] [controller_manager]: Component 'RobotSystem' does not have read or write statistics initialized, skipping registration.
-[gazebo-3] [INFO] [1782380171.582701764] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
-[gazebo-3] [1;32m[Msg] [0m[1;32mLinear velocity initialized to [[0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mAngular velocity initialized to [[0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m [0m[1;32m0[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mVelocityControl subscribing to twist messages on [[0m[1;32mmecanum_drive_controller/cmd_vel[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::VelocityControl[0m[1;36m] for entity [[0m[1;36m10[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz_ros2_control::GazeboSimROS2ControlPlugin[0m[1;36m] for entity [[0m[1;36m10[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [UserCommands.cc:1094] [0m[1;36mCreated entity [[0m[1;36m10[0m[1;36m] named [[0m[1;36mautobot[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__base_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__laser_frame_collision_1[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mbase_footprint_fixed_joint_lump__rgbd_camera_link_collision_2[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mback_left_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mback_right_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mfront_left_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:332] [0m[1;36mMesh construction from an SDF has not been implemented yet for [0m[1;36mdartsim. Use AttachMeshShapeFeature to use mesh shapes.[0m
-[gazebo-3] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mfront_right_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:349] [0m[1;36mInitializing render context[0m[1;36m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [WARN] [1782380173.369491434] [gz_ros_control]:  Desired controller update period (0.02 s) is slower than the gazebo simulation period (0.001 s).
-[gazebo-4] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="autobot"]/link[@name="base_footprint"]/sensor[@name="lidar_sensor"]/gz_frame_id:<data-string>:L124]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-[gazebo-4] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="autobot"]/link[@name="base_footprint"]/sensor[@name="rgbd_camera"]/gz_frame_id:<data-string>:L143]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
-[gazebo-3] libEGL warning: pci id for fd 93: 10de:28a1, driver (null)
-[gazebo-3] 
-[gazebo-3] pci id for fd 94: 10de:28a1, driver (null)
-[gazebo-3] pci id for fd 95: 10de:28a1, driver (null)
-[gazebo-3] libEGL warning: egl: failed to create dri2 screen
-[gazebo-3] libEGL warning: pci id for fd 93: 10de:28a1, driver (null)
-[gazebo-3] 
-[gazebo-3] pci id for fd 94: 10de:28a1, driver (null)
-[gazebo-3] pci id for fd 95: 10de:28a1, driver (null)
-[gazebo-3] libEGL warning: egl: failed to create dri2 screen
-[gazebo-3] libEGL warning: pci id for fd 93: 10de:28a1, driver (null)
-[gazebo-3] 
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/default/scene/info[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/default/scene/deletion[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/default/state[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
-[gazebo-3] [1;36m[Dbg] [EntityComponentManager.cc:1656] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m3[0m[1;36m entities each.[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:578] [Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36mExiting postupdate worker thread ([0m[1;36mExiting postupdate worker thread ([0m[1;36m0[Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[0m
-[gazebo-3] [1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:551] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m6[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [RenderUtil.cc:2646] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:953] [Dbg] [Sensors.cc:391] [0m[1;36mInitialization needed[0m[1;36m[Dbg] [Sensors.cc:953] [Dbg] [Sensors.cc:391] [0m[1;36m[0m
-[gazebo-3] [1;36mRendering Thread initialized[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [RgbdCameraSensor.cc:210] [0m[1;36mRGB images for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/image][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [RgbdCameraSensor.cc:224] [0m[1;36mDepth images for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/depth_image][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [RgbdCameraSensor.cc:238] [0m[1;36mPoints for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/points][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [CameraSensor.cc:695] [0m[1;36mCamera info for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera/camera_info[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Lidar.cc:139] [0m[1;36mLaser scans for [[0m[1;36mautobot::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan[0m[1;36m][0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [GpuLidarSensor.cc:164] [0m[1;36mLidar points for [[0m[1;36mautobot::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan/points[0m[1;36m][0m[1;36m[0m
-[INFO] [ros2-8]: process started with pid [547667]
-[ros2-8] Controller : joint_state_broadcaster already loaded, skipping load_controller!
-[gazebo-3] [INFO] [1782380195.402181817] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
-[gazebo-3] [ERROR] [1782380195.402236931] [controller_manager]: Could not configure controller with name 'joint_state_broadcaster' because no controller with this name exists
-[ros2-8] Error configuring controller : joint_state_broadcaster
-[ERROR] [ros2-8]: process has died [pid 547667, exit code 1, cmd 'ros2 control load_controller --set-state active joint_state_broadcaster'].
-[INFO] [ros2-9]: process started with pid [547702]
-[ros2-9] [INFO] [1782380196.934914500] [_ros2cli_547702]: waiting for service /controller_manager/list_controllers to become available...
-[gazebo-3] [INFO] [1782380197.937618774] [controller_manager]: Loading controller : 'mecanum_drive_controller' of type 'mecanum_drive_controller/MecanumDriveController'
-[gazebo-3] [INFO] [1782380197.937674822] [controller_manager]: Loading controller 'mecanum_drive_controller'
-[gazebo-3] [INFO] [1782380197.953139712] [controller_manager]: Controller 'mecanum_drive_controller' node arguments: --ros-args --params-file /home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_description/share/autobot_description/config/autobot/ros2_controllers.yaml --ros-args -p use_sim_time:=true --param use_sim_time:=true 
-[ros2-9] Failed loading controller mecanum_drive_controller check controller_manager logs
-[gazebo-3] Exception thrown during controller's init with message: Invalid value set during initialization for parameter 'front_left_wheel_command_joint_name': Parameter 'front_left_wheel_command_joint_name' cannot be empty 
-[gazebo-3] [ERROR] [1782380197.975823111] [mecanum_drive_controller]: Calling shutdown transition of controller node 'mecanum_drive_controller' due to init failure.
-[gazebo-3] [ERROR] [1782380197.976133264] [controller_manager]: Could not initialize the controller named 'mecanum_drive_controller'
-[ERROR] [ros2-9]: process has died [pid 547702, exit code 1, cmd 'ros2 control load_controller --set-state active mecanum_drive_controller'].
+[gazebo-5] pci id for fd 89: 10de:28a1, driver (null)
+[gazebo-5] pci id for fd 90: 10de:28a1, driver (null)
+[gazebo-5] libEGL warning: egl: failed to create dri2 screen
+[gazebo-5] libEGL warning: pci id for fd 88: 10de:28a1, driver (null)
+[gazebo-5] 
+[gazebo-4] [1;36m[Dbg] [SDFFeatures.cc:864] [0m[1;36mThe geometry element of collision [[0m[1;36mfront_right_wheel_link_collision[0m[1;36m] [0m[1;36mcouldn't be created[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:349] [0m[1;36mInitializing render context[0m[1;36m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/default/scene/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/default/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/default/state[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/default[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gazebo-4] [1;36m[Dbg] [EntityComponentManager.cc:1656] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m41[0m[1;36m entities each.[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:578] [0m[1;36m[Dbg] [SimulationRunner.cc:578] [Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m0[0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36m1[0m[1;36m)[0m[1;36m)[0m
+[gazebo-4] [1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:551] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m6[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:562] [0m[1;36mCreating postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [RenderUtil.cc:2646] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:391] [0m[1;36mRendering Thread initialized[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [RgbdCameraSensor.cc:210] [0m[1;36mRGB images for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/image][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [RgbdCameraSensor.cc:224] [0m[1;36mDepth images for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/depth_image][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [RgbdCameraSensor.cc:238] [0m[1;36mPoints for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera[0m[1;36m/points][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [CameraSensor.cc:695] [0m[1;36mCamera info for [[0m[1;36mautobot::base_footprint::rgbd_camera[0m[1;36m] advertised on [[0m[1;36mrgbd_camera/camera_info[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Lidar.cc:139] [0m[1;36mLaser scans for [[0m[1;36mautobot::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan[0m[1;36m][0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [GpuLidarSensor.cc:164] [0m[1;36mLidar points for [[0m[1;36mautobot::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan/points[0m[1;36m][0m[1;36m[0m
+[INFO] [ros2-9]: process started with pid [64568]
+[ros2-9] Controller : joint_state_broadcaster already loaded, skipping load_controller!
+[gazebo-4] [INFO] [1782394053.574816110] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-4] [ERROR] [1782394053.574911802] [controller_manager]: Could not configure controller with name 'joint_state_broadcaster' because no controller with this name exists
+[ros2-9] Error configuring controller : joint_state_broadcaster
+[ERROR] [ros2-9]: process has died [pid 64568, exit code 1, cmd 'ros2 control load_controller --set-state active joint_state_broadcaster'].
+[INFO] [ros2-10]: process started with pid [64611]
+[ros2-10] [INFO] [1782394054.784742560] [_ros2cli_64611]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-4] [INFO] [1782394055.287843652] [controller_manager]: Loading controller : 'mecanum_drive_controller' of type 'mecanum_drive_controller/MecanumDriveController'
+[gazebo-4] [INFO] [1782394055.287908168] [controller_manager]: Loading controller 'mecanum_drive_controller'
+[ros2-10] Failed loading controller mecanum_drive_controller check controller_manager logs
+[gazebo-4] [INFO] [1782394055.302476508] [controller_manager]: Controller 'mecanum_drive_controller' node arguments: --ros-args --params-file /home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_description/share/autobot_description/config/autobot/ros2_controllers.yaml --ros-args -p use_sim_time:=true --param use_sim_time:=true 
+[ERROR] [ros2-10]: process has died [pid 64611, exit code 1, cmd 'ros2 control load_controller --set-state active mecanum_drive_controller'].
+[rviz2-3] [INFO] [1782394055.839927128] [rviz]: Message Filter dropping message: frame 'autobot/base_footprint/lidar_sensor' at time 2.300 for reason 'discarding message because the queue is full'
+[rviz2-3] [INFO] [1782394070.741878777] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1782394082.188037297] [rviz]: Message Filter dropping message: frame 'autobot/base_footprint/lidar_sensor' at time 4.900 for reason 'discarding message because the queue is full'
 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
-[robot_state_publisher-1] [INFO] [1782380239.010929482] [rclcpp]: signal_handler(SIGINT/SIGTERM)
-[parameter_bridge-5] [INFO] [1782380239.010918121] [rclcpp]: signal_handler(SIGINT/SIGTERM)
-[rviz2-2] [INFO] [1782380239.010952062] [rclcpp]: signal_handler(SIGINT/SIGTERM)
-[image_bridge-6] [INFO] [1782380239.011113288] [rclcpp]: signal_handler(SIGINT/SIGTERM)
-[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 546877]
-[INFO] [parameter_bridge-5]: process has finished cleanly [pid 546881]
-[INFO] [image_bridge-6]: process has finished cleanly [pid 546882]
-[INFO] [rviz2-2]: process has finished cleanly [pid 546878]
-[gazebo-3] [1;36m[Dbg] [SignalHandler.cc:142] [0m[1;36mReceived signal[[0m[1;36m2[0m[1;36m].[0m
-[gazebo-3] [1;36m[Dbg] [ServerPrivate.cc:122] [0m[1;36mServer received signal[[0m[1;36m2[0m[1;36m][0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
-[gazebo-3] [INFO] [1782380240.965359096] [controller_manager.pal_statistics]: Async messages lost 0
-[gazebo-3] [INFO] [1782380240.965415039] [controller_manager.pal_statistics]: publish_async_failures_ 0
-[gazebo-3] [INFO] [1782380240.966219646] [controller_manager.pal_statistics]: Async messages lost 0
-[gazebo-3] [INFO] [1782380240.966259500] [controller_manager.pal_statistics]: publish_async_failures_ 0
-[ERROR] [gazebo-4]: process has died [pid 546880, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -g  --force-version 8'].
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:551] [0m[1;36mSensorsPrivate::RenderThread stopped[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [gz.cc:434] [0m[1;36mShutting down gz-sim-server[0m[1;36m[0m
-[gazebo-3] [1;36m[Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m
-[gazebo-3] [Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[0m
-[gazebo-3] [1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m2[0m[1;36m)[0m[1;36m[0m
-[gazebo-3] [1;36m[0m
-[gazebo-3] [1;36m[0m
-[gazebo-3] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
-[ERROR] [gazebo-3]: process has died [pid 546879, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -r -s -v 4 /home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_gazebo/share/autobot_gazebo/worlds/empty.world --force-version 8'].
+[rviz2-3] [INFO] [1782394084.959018869] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1782394084.959018875] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[image_bridge-7] [INFO] [1782394084.959003624] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[parameter_bridge-6] [INFO] [1782394084.959231372] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [parameter_bridge-6]: process has finished cleanly [pid 63861]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 63857]
+[INFO] [image_bridge-7]: process has finished cleanly [pid 63862]
+[INFO] [joint_state_publisher-1]: process has finished cleanly [pid 63855]
+[INFO] [rviz2-3]: process has finished cleanly [pid 63858]
+[gazebo-4] [1;36m[Dbg] [SignalHandler.cc:142] [0m[1;36mReceived signal[[0m[1;36m2[0m[1;36m].[0m
+[gazebo-4] [1;36m[Dbg] [ServerPrivate.cc:122] [0m[1;36mServer received signal[[0m[1;36m2[0m[1;36m][0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
+[ERROR] [gazebo-5]: process has died [pid 63860, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim -g  --force-version 8'].
+[gazebo-4] [INFO] [1782394087.141599944] [controller_manager.pal_statistics]: Async messages lost 0
+[gazebo-4] [INFO] [1782394087.141644883] [controller_manager.pal_statistics]: publish_async_failures_ 0
+[gazebo-4] [INFO] [1782394087.142615515] [controller_manager.pal_statistics]: Async messages lost 0
+[gazebo-4] [INFO] [1782394087.142634574] [controller_manager.pal_statistics]: publish_async_failures_ 0
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:551] [0m[1;36mSensorsPrivate::RenderThread stopped[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [gz.cc:434] [0m[1;36mShutting down gz-sim-server[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [SimulationRunner.cc:578] [Dbg] [SimulationRunner.cc:578] [0m[1;36mExiting postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36mExiting postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m)[0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m[Dbg] [SimulationRunner.cc:578] [Dbg] [SimulationRunner.cc:578] [0m[1;36m)[0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36m[0m
+[gazebo-4] [1;36m)[0m[1;36m[0m
+[gazebo-4] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
+[ERROR] [gazebo-4]: process has died [pid 63859, exit code -2, cmd 'ruby /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz sim  -r -s -v 4 /home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/install/autobot_gazebo/share/autobot_gazebo/worlds/house.world --force-version 8'].

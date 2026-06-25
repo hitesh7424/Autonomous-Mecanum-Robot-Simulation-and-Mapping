@@ -30,7 +30,7 @@
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint" />
     <child link="base_link" />
-    <origin xyz="0 0 0.03" rpy="0 0 0" />
+    <!-- <origin xyz="0 0 0.03" rpy="0 0 0" /> -->
   </joint>
   <!-- Link laser_frame -->
   <link name="laser_frame">
@@ -58,7 +58,7 @@
   </link>
   <!-- Joint from base_link to laser_frame -->
   <joint name="laser_frame_joint" type="fixed">
-    <origin xyz="-0 -0 0.2355" rpy="3.14159 -0 0" />
+    <origin xyz="-0 -0 0.2380" rpy="0 -0 0" />
     <parent link="base_link" />
     <child link="laser_frame" />
     <axis xyz="0 0 1" />
@@ -202,7 +202,7 @@
     </inertial>
     <!-- Part rgbd_camera_link -->
     <visual>
-      <origin xyz="0 0.17 0.288" rpy="1.5708 1.5708 0" />
+      <origin xyz="-0.288 0 -0.17" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://autobot_description/meshes/robot/rgbd_camera_link.stl" />
       </geometry>
@@ -211,7 +211,7 @@
       </material>
     </visual>
     <collision>
-      <origin xyz="0 0.17 0.288" rpy="1.5708 1.5708 0" />
+      <origin xyz="-0.288 0 -0.17" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://autobot_description/meshes/robot/rgbd_camera_link.stl" />
       </geometry>
@@ -219,10 +219,10 @@
   </link>
   <!-- Joint from base_link to rgbd_camera_link -->
   <joint name="rgbd_camera_joint" type="fixed">
-    <origin xyz="0.288 0 0.17" rpy="-1.5708 -0 1.5708" />
+    <origin xyz="0.288 0 0.17" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="rgbd_camera_link" />
-    <axis xyz="0 0 1" />
+    <axis xyz="0 0 -1" />
     <limit effort="10" velocity="10" />
   </joint>
 
@@ -232,6 +232,7 @@
 
     <sensor name="lidar_sensor" type="gpu_lidar">
       <topic>scan</topic>
+      <frame_id>laser_frame</frame_id>
       <update_rate>10</update_rate>
       <always_on>true</always_on>
       <visualize>true</visualize>
@@ -251,33 +252,40 @@
           </vertical>
         </scan>
         <range>
-          <min>0.20</min>
-          <max>30.0</max>
-          <resolution>0.013</resolution>
+          <min>0.05</min>
+          <max>20</max>
+          <resolution>0.01</resolution>
         </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.001</stddev>
+        </noise>
       </ray>
       <gz_frame_id>laser_frame</gz_frame_id>
     </sensor>
   </gazebo>
 
+
+
   <!-- rgbd camera plugin -->
   <gazebo reference="rgbd_camera_link">
     <sensor name="rgbd_camera" type="rgbd_camera">
       <camera>
-        <horizontal_fov>1.5184</horizontal_fov>
+        <horizontal_fov>2.094</horizontal_fov>
         <image>
-          <width>424</width>
-          <height>240</height>
+          <width>1080</width>
+          <height>720</height>
         </image>
         <clip>
-          <near>0.05</near>
-          <far>1.5</far>
+          <near>0.01</near>
+          <far>8</far>
         </clip>
       </camera>
       <always_on>1</always_on>
       <gz_frame_id>rgbd_camera_depth_optical_frame</gz_frame_id>
       <topic>rgbd_camera</topic>
-      <update_rate>2</update_rate>
+      <update_rate>10</update_rate>
       <visualize>true</visualize>
     </sensor>
   </gazebo>

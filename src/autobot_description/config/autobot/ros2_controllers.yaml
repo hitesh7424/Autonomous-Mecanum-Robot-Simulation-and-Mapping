@@ -14,7 +14,12 @@ controller_manager:
 # Parameters for the mecanum drive controller
 mecanum_drive_controller:
  ros__parameters:
-   # Joint names
+  #  # Joint names
+  #  front_left_wheel_command_joint_name: front_left_wheel_joint
+  #  front_right_wheel_command_joint_name: front_right_wheel_joint
+  #  back_left_wheel_command_joint_name: back_left_wheel_joint
+  #  back_right_wheel_command_joint_name: back_right_wheel_joint
+   
    front_left_joint_name: front_left_wheel_joint
    front_right_joint_name: front_right_wheel_joint
    back_left_joint_name: back_left_wheel_joint

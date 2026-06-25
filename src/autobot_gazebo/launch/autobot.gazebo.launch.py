@@ -83,6 +83,7 @@ def generate_launch_description():
     rviz_config_file = LaunchConfiguration("rviz_config_file")
     use_rviz = LaunchConfiguration("use_rviz")
     use_gazebo = LaunchConfiguration("use_gazebo")
+    use_jsp = LaunchConfiguration("use_jsp")
     use_robot_state_pub = LaunchConfiguration("use_robot_state_pub")
     use_sim_time = LaunchConfiguration("use_sim_time")
     world_file = LaunchConfiguration("world_file")
@@ -138,6 +139,13 @@ def generate_launch_description():
     )
 
     # GUI and visualization arguments
+    declare_use_jsp_cmd = DeclareLaunchArgument(
+        name="use_jsp",
+        default_value="false",
+        choices=["true", "false"],
+        description="Flag to enable joint_state_publisher",
+    )
+
     declare_jsp_gui_cmd = DeclareLaunchArgument(
         name="jsp_gui",
         default_value="false",
@@ -213,6 +221,7 @@ def generate_launch_description():
         launch_arguments={
             "enable_odom_tf": enable_odom_tf,
             "jsp_gui": jsp_gui,
+            "use_jsp": use_jsp,
             "rviz_config_file": rviz_config_file,
             "use_rviz": use_rviz,
             "use_gazebo": use_gazebo,
@@ -312,6 +321,7 @@ def generate_launch_description():
     ld.add_action(declare_headless_cmd)
     ld.add_action(declare_robot_name_cmd)
     ld.add_action(declare_rviz_config_file_cmd)
+    ld.add_action(declare_use_jsp_cmd)
     ld.add_action(declare_jsp_gui_cmd)
     ld.add_action(declare_load_controllers_cmd)
     ld.add_action(declare_use_rviz_cmd)

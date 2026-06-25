@@ -23,7 +23,6 @@ ARGUMENTS = [
     DeclareLaunchArgument(
         "robot_name", default_value="autobot", description="Name of the robot"
     ),
-
     DeclareLaunchArgument(
         "use_gazebo",
         default_value="false",
@@ -76,7 +75,7 @@ def generate_launch_description():
     # Declare the launch arguments
     declare_jsp_gui_cmd = DeclareLaunchArgument(
         name="jsp_gui",
-        default_value="true",
+        default_value="false",
         choices=["true", "false"],
         description="Flag to enable joint_state_publisher_gui",
     )
