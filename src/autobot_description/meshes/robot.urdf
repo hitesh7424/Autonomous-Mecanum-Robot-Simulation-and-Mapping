@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/480be4967933c02b4973d044/w/c1990993726ba685245c3466/e/2387f92d01afa76960d9c6e3 -->
+<robot name="meshes">
+  <!-- Link base_link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.000645097 1.49348e-05 0.123911" rpy="0 0 0"/>
+      <mass value="19.3771"/>
+      <inertia ixx="0.656608" ixy="-1.63412e-05" ixz="2.74753e-05" iyy="0.740294" iyz="2.27431e-05" izz="1.21202"/>
+    </inertial>
+    <!-- Part base_link -->
+    <visual>
+      <origin xyz="-0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/base_link.stl"/>
+      </geometry>
+      <material name="base_link_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/base_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link base_footprint -->
+  <link name="base_footprint">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part base_footprint -->
+    <visual>
+      <origin xyz="-0 0 -0.03" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/base_footprint.stl"/>
+      </geometry>
+      <material name="base_footprint_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 0 -0.03" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/base_footprint.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to base_footprint -->
+  <joint name="base_footprint" type="fixed">
+    <origin xyz="0 0 0.03" rpy="0 -0 0"/>
+    <parent link="base_link"/>
+    <child link="base_footprint"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link laser_frame -->
+  <link name="laser_frame">
+    <inertial>
+      <origin xyz="-0 -0 -0.00125" rpy="0 0 0"/>
+      <mass value="0.00110509"/>
+      <inertia ixx="3.96821e-07" ixy="0" ixz="0" iyy="3.96821e-07" iyz="0" izz="7.92491e-07"/>
+    </inertial>
+    <!-- Part laser_frame -->
+    <visual>
+      <origin xyz="-0 -0 0.2355" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/laser_frame.stl"/>
+      </geometry>
+      <material name="laser_frame_material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0 -0 0.2355" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/laser_frame.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to laser_frame -->
+  <joint name="laser_frame_joint" type="fixed">
+    <origin xyz="-0 -0 0.2355" rpy="3.14159 -0 0"/>
+    <parent link="base_link"/>
+    <child link="laser_frame"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link front_right_wheel_link -->
+  <link name="front_right_wheel_link">
+    <inertial>
+      <origin xyz="0 0 -0.025" rpy="0 0 0"/>
+      <mass value="1.13952"/>
+      <inertia ixx="0.00216552" ixy="9.6e-06" ixz="-0" iyy="0.00208392" iyz="0" izz="0.00377465"/>
+    </inertial>
+    <!-- Part front_right_wheel_link -->
+    <visual>
+      <origin xyz="-0.21 -0.08 -0.26" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/front_right_wheel_link.stl"/>
+      </geometry>
+      <material name="front_right_wheel_link_material">
+        <color rgba="0.0470588 0.470588 0.435294 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.21 -0.08 -0.26" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/front_right_wheel_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to front_right_wheel_link -->
+  <joint name="front_right_wheel_joint" type="continuous">
+    <origin xyz="0.21 -0.26 0.08" rpy="1.5708 -0 0"/>
+    <parent link="base_link"/>
+    <child link="front_right_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link front_left_wheel_link -->
+  <link name="front_left_wheel_link">
+    <inertial>
+      <origin xyz="0 0 -0.025" rpy="0 0 0"/>
+      <mass value="1.13952"/>
+      <inertia ixx="0.00216552" ixy="-9.6e-06" ixz="-0" iyy="0.00208392" iyz="-0" izz="0.00377465"/>
+    </inertial>
+    <!-- Part front_left_wheel_link -->
+    <visual>
+      <origin xyz="-0.21 0.08 -0.26" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/front_left_wheel_link.stl"/>
+      </geometry>
+      <material name="front_left_wheel_link_material">
+        <color rgba="0.0470588 0.470588 0.435294 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.21 0.08 -0.26" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/front_left_wheel_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to front_left_wheel_link -->
+  <joint name="front_left_wheel_joint" type="continuous">
+    <origin xyz="0.21 0.26 0.08" rpy="-1.5708 -0 0"/>
+    <parent link="base_link"/>
+    <child link="front_left_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link back_right_wheel_link -->
+  <link name="back_right_wheel_link">
+    <inertial>
+      <origin xyz="-0 0 -0.025" rpy="0 0 0"/>
+      <mass value="1.13952"/>
+      <inertia ixx="0.00211984" ixy="4.16292e-05" ixz="-0" iyy="0.0021296" iyz="0" izz="0.00377465"/>
+    </inertial>
+    <!-- Part back_right_wheel_link -->
+    <visual>
+      <origin xyz="0.21 -0.08 -0.26" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/back_right_wheel_link.stl"/>
+      </geometry>
+      <material name="back_right_wheel_link_material">
+        <color rgba="0.0470588 0.470588 0.435294 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.21 -0.08 -0.26" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/back_right_wheel_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to back_right_wheel_link -->
+  <joint name="rear_right_wheel_joint" type="continuous">
+    <origin xyz="-0.21 -0.26 0.08" rpy="1.5708 -0 0"/>
+    <parent link="base_link"/>
+    <child link="back_right_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link back_left_wheel_link -->
+  <link name="back_left_wheel_link">
+    <inertial>
+      <origin xyz="-0 -0 -0.025" rpy="0 0 0"/>
+      <mass value="1.13952"/>
+      <inertia ixx="0.00211984" ixy="-4.16292e-05" ixz="-0" iyy="0.0021296" iyz="-0" izz="0.00377465"/>
+    </inertial>
+    <!-- Part back_left_wheel_link -->
+    <visual>
+      <origin xyz="0.21 0.08 -0.26" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/back_left_wheel_link.stl"/>
+      </geometry>
+      <material name="back_left_wheel_link_material">
+        <color rgba="0.0470588 0.470588 0.435294 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.21 0.08 -0.26" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/back_left_wheel_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to back_left_wheel_link -->
+  <joint name="rear_left_wheel_joint" type="continuous">
+    <origin xyz="-0.21 0.26 0.08" rpy="-1.5708 -0 0"/>
+    <parent link="base_link"/>
+    <child link="back_left_wheel_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+  <!-- Link rgbd_camera_link -->
+  <link name="rgbd_camera_link">
+    <inertial>
+      <origin xyz="-0 -0.000140937 -0.00297824" rpy="0 0 0"/>
+      <mass value="0.0151912"/>
+      <inertia ixx="2.51438e-06" ixy="0" ixz="0" iyy="6.58666e-06" iyz="-6.47e-09" izz="9.005e-06"/>
+    </inertial>
+    <!-- Part rgbd_camera_link -->
+    <visual>
+      <origin xyz="0 0.17 0.288" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/rgbd_camera_link.stl"/>
+      </geometry>
+      <material name="rgbd_camera_link_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.17 0.288" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://autobot_description/meshes/robot/rgbd_camera_link.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from base_link to rgbd_camera_link -->
+  <joint name="rgbd_camera_joint" type="fixed">
+    <origin xyz="0.288 0 0.17" rpy="-1.5708 -0 1.5708"/>
+    <parent link="base_link"/>
+    <child link="rgbd_camera_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10"/>
+  </joint>
+</robot>
