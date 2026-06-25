@@ -3,6 +3,12 @@
 <sdf version="1.6">
   <world name="default">
 
+    <physics type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+    </physics>
+
     <!-- Plugin for simulating physics -->
     <plugin
       filename="gz-sim-physics-system"
@@ -60,8 +66,8 @@
           <surface>
             <friction>
               <ode>
-                <mu>0.0</mu>
-                <mu2>0.0</mu2>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
               </ode>
             </friction>
           </surface>

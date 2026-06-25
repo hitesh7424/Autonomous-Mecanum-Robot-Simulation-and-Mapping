@@ -60,3 +60,27 @@ ros2 launch autobot_gazebo autobot.gazebo.launch.py \
     yaw:=0.0
 
 gz service -s /gui/move_to/pose --reqtype gz.msgs.GUICamera --reptype gz.msgs.Boolean --timeout 2000 --req "pose: {position: {x: 0.0, y: -2.0, z: 2.0} orientation: {x: -0.2706, y: 0.2706, z: 0.6533, w: 0.6533}}"
+
+ros2 launch autobot_bringup autobot_navigation.launch.py
+
+
+
+ros2 launch autobot_bringup autobot_navigation.launch.py \
+    enable_odom_tf:=false \
+    headless:=False \
+    load_controllers:=true \
+    world_file:=cafe.world \
+    use_rviz:=true \
+    use_robot_state_pub:=true \
+    use_sim_time:=true \
+    x:=0.0 \
+    y:=0.0 \
+    z:=0.20 \
+    roll:=0.0 \
+    pitch:=0.0 \
+    yaw:=0.0 \
+    "$SLAM_ARG" \
+    map:=/home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/src/autobot_navigation/maps/cafe_world_map.yaml
+
+
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args   -p stamped:=true   -r cmd_vel:=/mecanum_drive_controller/cmd_vel
