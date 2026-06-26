@@ -55,7 +55,7 @@ def generate_launch_description():
 
     # Add delay to joint state broadcaster (if necessary)
     delayed_start = TimerAction(
-        period=25.0, actions=[start_joint_state_broadcaster_cmd]
+        period=2.0, actions=[start_joint_state_broadcaster_cmd]
     )
 
     # Register event handler for sequencing

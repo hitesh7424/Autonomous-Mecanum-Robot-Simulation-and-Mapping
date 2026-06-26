@@ -63,7 +63,7 @@ def generate_launch_description():
 
     declare_camera_namespace_cmd = DeclareLaunchArgument(
         name="camera_namespace",
-        default_value="cam_1",
+        default_value="rgbd_camera",
         description="Namespace for the camera and AprilTag nodes",
     )
 
@@ -92,6 +92,7 @@ def generate_launch_description():
         remappings=[
             ("image", "color/image_raw"),
             ("image_rect", "color/image_rect"),
+            ("camera_info", "color/camera_info"),
         ],
         parameters=[
             {

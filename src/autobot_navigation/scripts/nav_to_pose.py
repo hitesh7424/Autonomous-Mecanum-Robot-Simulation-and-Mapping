@@ -72,8 +72,19 @@ class GoToGoalPose(Node):
         # Launch the ROS 2 Navigation Stack
         self.navigator = BasicNavigator()
 
+        # Declare and get slam parameter
+        self.declare_parameter('slam', True)
+        slam_val = self.get_parameter('slam').value
+        if isinstance(slam_val, str):
+            slam_enabled = slam_val.lower() == 'true'
+        else:
+            slam_enabled = bool(slam_val)
+
         # Wait for navigation to fully activate
-        self.navigator.waitUntilNav2Active()
+        if slam_enabled:
+            self.navigator.waitUntilNav2Active(localizer='robot_localization')
+        else:
+            self.navigator.waitUntilNav2Active(localizer='amcl')
 
     def go_to_goal_pose(self, msg):
         """Go to goal pose."""
@@ -238,7 +249,8 @@ def main(args=None):
 
     finally:
         # Shutdown the ROS client library for Python
-        rclpy.shutdown()
+        if rclpy.ok():
+            rclpy.shutdown()
 
 
 if __name__ == '__main__':

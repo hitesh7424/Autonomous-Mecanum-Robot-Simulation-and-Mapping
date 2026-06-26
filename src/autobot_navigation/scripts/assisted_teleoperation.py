@@ -64,8 +64,19 @@ class AssistedTeleopNode(Node):
             f'Assisted Teleop Node initialized with costmap clearing frequency: {
                 clear_frequency} Hz')
 
+        # Declare and get slam parameter
+        self.declare_parameter('slam', True)
+        slam_val = self.get_parameter('slam').value
+        if isinstance(slam_val, str):
+            slam_enabled = slam_val.lower() == 'true'
+        else:
+            slam_enabled = bool(slam_val)
+
         # Wait for navigation to fully activate.
-        self.navigator.waitUntilNav2Active()
+        if slam_enabled:
+            self.navigator.waitUntilNav2Active(localizer='robot_localization')
+        else:
+            self.navigator.waitUntilNav2Active(localizer='amcl')
 
     def cmd_vel_callback(self, twist_msg: Twist) -> None:
         """Process incoming velocity commands and activate assisted teleop if needed."""
@@ -117,7 +128,13 @@ def main():
 
     try:
         node = AssistedTeleopNode()
-        rclpy.spin(node)
+        
+        # Use a custom executor to prevent using the global executor for spinning the node,
+        # which avoids RuntimeError: Executor is already spinning when BasicNavigator
+        # methods are called from within callbacks.
+        executor = rclpy.executors.SingleThreadedExecutor()
+        executor.add_node(node)
+        executor.spin()
 
     except KeyboardInterrupt:
         if node:
@@ -127,9 +144,13 @@ def main():
             node.get_logger().info('Node shutting down due to ROS interrupt')
     finally:
         if node:
-            node.cancel_assisted_teleop()
-            node.navigator.lifecycleShutdown()
-        rclpy.shutdown()
+            try:
+                node.cancel_assisted_teleop()
+                node.navigator.lifecycleShutdown()
+            except Exception:
+                pass
+        if rclpy.ok():
+            rclpy.shutdown()
 
 
 if __name__ == '__main__':

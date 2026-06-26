@@ -124,7 +124,7 @@ def generate_launch_description():
 
     declare_camera_namespace_cmd = DeclareLaunchArgument(
         name="camera_namespace",
-        default_value="cam_1",
+        default_value="rgbd_camera",
         description="Namespace for the camera",
     )
 
@@ -300,7 +300,7 @@ def generate_launch_description():
         package="autobot_navigation",
         executable="assisted_teleoperation.py",
         output="screen",
-        parameters=[{"use_sim_time": use_sim_time}],
+        parameters=[{"use_sim_time": use_sim_time, "slam": slam,}],
     )
 
     # Start the node that relays /cmd_vel to /mecanum_drive_controller/cmd_vel
@@ -350,7 +350,7 @@ def generate_launch_description():
         package="autobot_navigation",
         executable="nav_to_pose.py",
         output="screen",
-        parameters=[{"use_sim_time": use_sim_time}],
+        parameters=[{"use_sim_time": use_sim_time,  "slam": slam,}],
     )
 
     # Launch the ROS 2 Navigation Stack

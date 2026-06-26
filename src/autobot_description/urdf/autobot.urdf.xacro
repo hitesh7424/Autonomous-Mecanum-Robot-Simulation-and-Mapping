@@ -5,9 +5,8 @@
   <link name="base_link">
     <inertial>
       <origin xyz="-0.000645097 1.49348e-05 0.123911" rpy="0 0 0" />
-      <mass value="58.1313" />
-      <inertia ixx="1.969824" ixy="-4.90236e-05" ixz="8.24259e-05" iyy="2.220882" iyz="6.82293e-05"
-        izz="3.63606" />
+      <mass value="19.3771"/>
+      <inertia ixx="0.656608" ixy="-1.63412e-05" ixz="2.74753e-05" iyy="0.740294" iyz="2.27431e-05" izz="1.21202"/>
     </inertial>
     <!-- Part base_link -->
     <visual>
@@ -210,12 +209,12 @@
         <color rgba="0.972549 0.529412 0.00392157 1" />
       </material>
     </visual>
-    <collision>
+    <!-- <collision>
       <origin xyz="-0.288 0 -0.17" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://autobot_description/meshes/robot/rgbd_camera_link.stl" />
       </geometry>
-    </collision>
+    </collision> -->
   </link>
   <!-- Joint from base_link to rgbd_camera_link -->
   <joint name="rgbd_camera_joint" type="fixed">
@@ -224,6 +223,14 @@
     <child link="rgbd_camera_link" />
     <axis xyz="0 0 -1" />
     <limit effort="10" velocity="10" />
+  </joint>
+
+  <!-- Optical frame for the camera to match standard computer vision orientation -->
+  <link name="rgbd_camera_depth_optical_frame" />
+  <joint name="rgbd_camera_depth_optical_joint" type="fixed">
+    <origin xyz="0.05 0 0" rpy="-1.57079632679 0 -1.57079632679" />
+    <parent link="rgbd_camera_link" />
+    <child link="rgbd_camera_depth_optical_frame" />
   </joint>
 
 
@@ -271,21 +278,22 @@
   <!-- rgbd camera plugin -->
   <gazebo reference="rgbd_camera_link">
     <sensor name="rgbd_camera" type="rgbd_camera">
+      <pose>0.05 0 0 0 0 0</pose>
       <camera>
-        <horizontal_fov>2.094</horizontal_fov>
+        <horizontal_fov>2.1</horizontal_fov>
         <image>
-          <width>1080</width>
-          <height>720</height>
+          <width>424</width>
+          <height>240</height>
         </image>
         <clip>
-          <near>0.01</near>
-          <far>8</far>
+          <near>0.05</near>
+          <far>5</far>
         </clip>
       </camera>
       <always_on>1</always_on>
       <gz_frame_id>rgbd_camera_depth_optical_frame</gz_frame_id>
       <topic>rgbd_camera</topic>
-      <update_rate>10</update_rate>
+      <update_rate>5</update_rate>
       <visualize>true</visualize>
     </sensor>
   </gazebo>

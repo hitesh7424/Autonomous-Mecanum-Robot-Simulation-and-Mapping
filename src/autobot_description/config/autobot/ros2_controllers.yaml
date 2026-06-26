@@ -27,7 +27,7 @@ mecanum_drive_controller:
 
    # Robot physical parameters
    wheel_base: 0.420
-   wheel_separation: 0.470
+   wheel_separation: 0.520
    wheel_radius: 0.080
    wheel_separation_multiplier: 1.0
    front_left_wheel_radius_multiplier: 1.0

@@ -228,9 +228,9 @@ local_costmap:
         min_obstacle_height: 0.0
         max_obstacle_height: 2.0
         mark_threshold: 0
-        observation_sources: realsense1
-        realsense1:
-          topic: /cam_1/depth/color/points
+        observation_sources: rgbd_camera
+        rgbd_camera:
+          topic: /rgbd_camera/depth/color/points
           raytrace_min_range: 0.05
           raytrace_max_range: 1.25
           obstacle_min_range: 0.05
@@ -291,9 +291,9 @@ global_costmap:
         min_obstacle_height: 0.0
         max_obstacle_height: 2.0
         mark_threshold: 0
-        observation_sources: realsense1
-        realsense1:
-          topic: /cam_1/depth/color/points
+        observation_sources: rgbd_camera
+        rgbd_camera:
+          topic: /rgbd_camera/depth/color/points
           raytrace_min_range: 0.05
           raytrace_max_range: 1.25
           obstacle_min_range: 0.05
@@ -434,11 +434,12 @@ docking_server:
     dock_prestaging_tolerance: 0.5
 
     # Types of docks
-    dock_plugins: ["rosmaster_x3_dock"]
-    rosmaster_x3_dock:
+    dock_plugins: ["autobot_dock"]
+    autobot_dock:
       plugin: "opennav_docking::SimpleChargingDock"
       docking_threshold: 0.02
-      staging_x_offset: 0.75
+      staging_x_offset: 1.2
+      # staging_x_offset: 1.0
       staging_yaw_offset: 3.14
       use_external_detection_pose: true
       use_battery_status: false
@@ -448,7 +449,8 @@ docking_server:
       charging_threshold: 0.5
 
       external_detection_timeout: 1.0
-      external_detection_translation_x: -0.18
+      external_detection_translation_x: -0.35
+      # external_detection_translation_x: -0.18
       external_detection_translation_y: 0.0
       external_detection_rotation_roll: -1.57
       external_detection_rotation_pitch: 1.57

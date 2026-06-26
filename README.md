@@ -83,4 +83,20 @@ ros2 launch autobot_bringup autobot_navigation.launch.py \
     map:=/home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/src/autobot_navigation/maps/cafe_world_map.yaml
 
 
-    ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args   -p stamped:=true   -r cmd_vel:=/mecanum_drive_controller/cmd_vel
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args   -p stamped:=true   -r cmd_vel:=/mecanum_drive_controller/cmd_vel
+
+ros2 run nav2_map_server map_saver_cli -f cafe_world_map
+
+ros2 topic echo /clicked_point
+
+ros2 run autobot_navigation test_nav_to_pose.py --ros-args -p use_sim_time:=true
+
+ros2 launch autobot_bringup autobot_navigation.launch.py slam:=False map:=/home/hitesh/Autonomous-Mecanum-Robot-Simulation-and-Mapping/src/autobot_navigation/maps/cafe_world_map.yaml
+
+ros2 topic pub /goal_pose/goal geometry_msgs/PoseStamped "{header: {stamp: {sec: 0, nanosec: 0}, frame_id: 'map'}, pose: {position: {x: 2.0, y: 4.0, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.707, w: 0.707}}}" --once
+
+ros2 topic pub /stop/navigation/go_to_goal_pose std_msgs/msg/Bool "data: true"
+
+ros2 topic pub /cmd_vel_teleop geometry_msgs/msg/Twist "{linear: {x: 0.2, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" --rate 10
+
+ros2 topic pub /cancel_assisted_teleop std_msgs/Bool "data: true" --once

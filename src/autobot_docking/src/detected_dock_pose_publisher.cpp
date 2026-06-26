@@ -22,7 +22,7 @@
  *                                                      to the camera optical frame
  *
  * Parameters:
- *     parent_frame (string, default: "cam_1_depth_optical_frame"): Name of the camera's optical frame
+ *     parent_frame (string, default: "rgbd_camera_depth_optical_frame"): Name of the camera's optical frame
  *     child_frame (string, default: "tag36h11:0"): Name of the AprilTag frame
  *     publish_rate (double, default: 10.0): How often to publish the tag pose in Hz
  *
@@ -41,7 +41,7 @@
 /**
  * @brief A ROS2 node that publishes AprilTag poses relative to the camera optical frame
  *
- * This node listens for transforms between the camera's optical frame (cam_1_depth_optical_frame)
+ * This node listens for transforms between the camera's optical frame (rgbd_camera_depth_optical_frame)
  * and an AprilTag frame (tag36h11:0). The optical frame is important as it follows standard
  * computer vision conventions and is the frame in which the AprilTag detector operates.
  *
@@ -61,7 +61,7 @@ public:
   : Node("detected_dock_pose_publisher")
   {
     // Declare parameters with default values and documentation
-    this->declare_parameter("parent_frame", "cam_1_depth_optical_frame");
+    this->declare_parameter("parent_frame", "rgbd_camera_depth_optical_frame");
     this->declare_parameter("child_frame", "tag36h11:0");
     this->declare_parameter("publish_rate", 10.0);  // Hz
 

@@ -166,9 +166,9 @@ local_costmap:
       #  min_obstacle_height: 0.0
       #  max_obstacle_height: 2.0
       #  mark_threshold: 0
-      #  observation_sources: realsense1
-      #  realsense1:
-      #    topic: /cam_1/depth/color/points
+      #  observation_sources: rgbd_camera
+      #  rgbd_camera:
+      #    topic: /rgbd_camera/depth/color/points
       #    raytrace_min_range: 0.05
       #    raytrace_max_range: 1.25
       #    obstacle_min_range: 0.05
@@ -228,9 +228,9 @@ global_costmap:
       #  min_obstacle_height: 0.0
       #  max_obstacle_height: 2.0
       #  mark_threshold: 0
-      #  observation_sources: realsense1
-      #  realsense1:
-      #    topic: /cam_1/depth/color/points
+      #  observation_sources: rgbd_camera
+      #  rgbd_camera:
+      #    topic: /rgbd_camera/depth/color/points
       #    raytrace_min_range: 0.05
       #    raytrace_max_range: 1.25
       #    obstacle_min_range: 0.05
