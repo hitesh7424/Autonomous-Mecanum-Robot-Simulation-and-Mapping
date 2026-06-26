@@ -437,8 +437,9 @@ docking_server:
     dock_plugins: ["autobot_dock"]
     autobot_dock:
       plugin: "opennav_docking::SimpleChargingDock"
-      docking_threshold: 0.02
-      staging_x_offset: 1.2
+      # docking_threshold: 0.02
+      docking_threshold: 0.2
+      staging_x_offset: 1.0
       # staging_x_offset: 1.0
       staging_yaw_offset: 3.14
       use_external_detection_pose: true
