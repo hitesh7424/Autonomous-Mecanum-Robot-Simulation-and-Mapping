@@ -293,7 +293,7 @@
       <always_on>1</always_on>
       <gz_frame_id>rgbd_camera_depth_optical_frame</gz_frame_id>
       <topic>rgbd_camera</topic>
-      <update_rate>5</update_rate>
+      <update_rate>2</update_rate>
       <visualize>true</visualize>
     </sensor>
   </gazebo>
