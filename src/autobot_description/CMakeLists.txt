@@ -7,10 +7,7 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
-# install headers if any
-install(DIRECTORY include/
-  DESTINATION include
-)
+
 
 # install package resources for use by other packages and launch files
 install(DIRECTORY launch urdf meshes config rviz
