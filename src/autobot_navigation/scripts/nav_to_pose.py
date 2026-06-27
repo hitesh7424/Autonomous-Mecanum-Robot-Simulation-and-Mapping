@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-ROS 2 node for navigating to a goal pose and publishing status updates.
+ROS 2 node for navigating the Autonomous Mecanum Robot (Autobot) to a goal pose and publishing status updates.
 
 This script creates a ROS 2 node that:
     - Subscribes to a goal pose
-    - Navigates the robot to the goal pose
+    - Navigates the Autobot to the goal pose
     - Publishes the estimated time of arrival
     - Publishes the goal status
     - Cancels the goal if a stop signal is received
@@ -17,9 +17,6 @@ Subscription Topics:
 Publishing Topics:
     /goal_pose/eta (std_msgs/String): Estimated time of arrival in seconds
     /goal_pose/status (std_msgs/String): Goal pose status
-
-:author: Addison Sears-Collins
-:date: December 5, 2024
 """
 
 import time
@@ -82,7 +79,7 @@ class GoToGoalPose(Node):
 
         # Wait for navigation to fully activate
         if slam_enabled:
-            self.navigator.waitUntilNav2Active(localizer='robot_localization')
+            self.navigator.waitUntilNav2Active(localizer='slam_toolbox')
         else:
             self.navigator.waitUntilNav2Active(localizer='amcl')
 

@@ -1,9 +1,9 @@
 /**
  * @file speed_limiter.cpp
- * @brief Implementation of velocity, acceleration, and jerk limits for mecanum drive robots.
+ * @brief Implementation of velocity, acceleration, and jerk limits for the Autonomous Mecanum Robot (Autobot).
  *
  * This implements the speed limiting functionality for each velocity component
- * (x, y, angular) of a mecanum drive robot. It ensures smooth and safe motion by:
+ * (x, y, angular) of the Autonomous Mecanum Robot (Autobot). It ensures smooth and safe motion by:
  * - Limiting maximum and minimum velocities
  * - Controlling acceleration to prevent sudden speed changes
  * - Managing jerk (rate of acceleration change) for smooth motion
@@ -12,9 +12,6 @@
  * - One for x velocity (forward/backward)
  * - One for y velocity (left/right)
  * - One for angular velocity (rotation)
- *
- * @author Addison Sears-Collins
- * @date November 18, 2024
  */
 
 #include <algorithm>

@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
-Launch Gazebo simulation with a robot.
+Launch Gazebo simulation for the Autonomous Mecanum Robot (Autobot).
 
 This launch file sets up a complete ROS 2 simulation environment with Gazebo for
-a Yahboom ROSMASTER robot: https://github.com/YahboomTechnology
-
-:author: Addison Sears-Collins
-:date: November 21, 2024
+the Autobot robot.
 """
 
 import os

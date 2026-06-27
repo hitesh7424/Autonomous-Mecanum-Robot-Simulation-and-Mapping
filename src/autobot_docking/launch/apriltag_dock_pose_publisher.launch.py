@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Launch file for publishing the pose of the AprilTag on the detected_dock_pose topic as a
-geometry_msgs/PoseStamped message.
+Launch AprilTag docking pose publisher for the Autonomous Mecanum Robot (Autobot).
 
-:author: Automatic Addison
-:date: December 11, 2024
+This launch file starts the node that publishes the pose of the AprilTag on the 
+detected_dock_pose topic as a geometry_msgs/PoseStamped message.
 """
 
 from launch import LaunchDescription

@@ -1,12 +1,9 @@
 /**
  * @file visibility_control.h
- * @brief Visibility control macros for mecanum drive controller
+ * @brief Visibility control macros for the Autonomous Mecanum Robot (Autobot) mecanum drive controller
  *
  * This header must be included by all ROS 2 headers which declare symbols
  * that need to be exported for DLL/shared library builds.
- *
- * @author Addison Sears-Collins
- * @date November 18, 2024
  */
 
 #ifndef MECANUM_DRIVE_CONTROLLER__VISIBILITY_CONTROL_H_

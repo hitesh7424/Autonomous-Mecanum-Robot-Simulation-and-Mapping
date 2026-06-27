@@ -1,6 +1,6 @@
 /**
  * @file odometry.cpp
- * @brief Implementation of odometry calculations for mecanum drive robots
+ * @brief Implementation of odometry calculations for the Autonomous Mecanum Robot (Autobot)
  *
  * This implementation handles the unique kinematics of mecanum wheels to track
  * the robot's position and velocity in 2D space, including holonomic movement.
@@ -15,9 +15,6 @@
  * L = distance from robot center to front/back wheels (meters)
  * W = distance from robot center to left/right wheels (meters)
  * w1,w2,w3,w4 = angular velocities of wheels (radians/second)
- *
- * @author Addison Sears-Collins
- * @date November 18, 2024
  */
 
 #include "mecanum_drive_controller/odometry.hpp"

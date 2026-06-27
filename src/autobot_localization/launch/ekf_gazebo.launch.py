@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """
-Launch file for the Extended Kalman Filter (EKF) node in Gazebo simulation.
+Launch the Extended Kalman Filter (EKF) node for Autonomous Mecanum Robot (Autobot) in Gazebo.
 
-This script starts the robot_localization package's EKF node which combines (fuses)
-data from wheel odometry and IMU sensors to better estimate the robot's position
+This launch file starts the robot_localization package's EKF node which fuses
+data from wheel odometry and IMU sensors to estimate the robot's position
 and orientation.
-
-:author: Addison Sears-Collins
-:date: November 29, 2024
 """
 
 import os

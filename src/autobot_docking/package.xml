@@ -15,6 +15,7 @@
   <depend>image_proc</depend>
   <depend>image_view</depend>
   <depend>geometry_msgs</depend>
+  <depend>action_msgs</depend>
   <depend>rclcpp_components</depend>
   <depend>nav2_simple_commander</depend>
   <depend>tf2_ros</depend>

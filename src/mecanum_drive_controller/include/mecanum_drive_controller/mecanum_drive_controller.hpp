@@ -1,13 +1,10 @@
 /**
  * @file mecanum_drive_controller.hpp
- * @brief ROS 2 controller for mecanum drive mobile robots
+ * @brief ROS 2 controller for the Autonomous Mecanum Robot (Autobot)
  *
- * This controller handles the kinematics of a mecanum drive robot with four mecanum wheels.
+ * This controller handles the kinematics of the Autonomous Mecanum Robot (Autobot) with four mecanum wheels.
  * It subscribes to velocity commands and converts them into individual wheel velocities,
  * taking into account the unique properties of mecanum wheels that allow omnidirectional movement.
- *
- * @author Addison Sears-Collins
- * @date May 15, 2025
  */
 
 #ifndef MECANUM_DRIVE_CONTROLLER__MECANUM_DRIVE_CONTROLLER_HPP_

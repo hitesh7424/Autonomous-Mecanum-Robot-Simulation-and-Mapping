@@ -1,12 +1,9 @@
 /**
  * @file speed_limiter.hpp
- * @brief Speed limiter for mecanum drive velocity components
+ * @brief Speed limiter for the Autonomous Mecanum Robot (Autobot) mecanum drive velocity components
  *
  * This class provides velocity, acceleration, and jerk limiting functionality
- * for individual velocity components (x, y, angular) of a mecanum drive robot.
- *
- * @author Addison Sears-Collins
- * @date November 18, 2024
+ * for individual velocity components (x, y, angular) of the Autonomous Mecanum Robot (Autobot).
  */
 
 #ifndef MECANUM_DRIVE_CONTROLLER__SPEED_LIMITER_HPP_

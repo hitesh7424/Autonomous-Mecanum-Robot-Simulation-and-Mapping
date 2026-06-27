@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 """
-Create a PoseStamped message for ROS 2 navigation.
+Create a PoseStamped message for Autonomous Mecanum Robot (Autobot) navigation in ROS 2.
 
 This script creates a geometry_msgs/PoseStamped message which is commonly used
 for robot navigation in ROS 2. It shows how to properly construct a PoseStamped
 message with header information and pose data.
-
-:author: Addison Sears-Collins
-:date: December 5, 2024
 """
 
 from rclpy.node import Node

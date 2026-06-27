@@ -1,13 +1,10 @@
 /**
  * @file odometry.hpp
- * @brief Odometry calculations for mecanum drive robots
+ * @brief Odometry calculations for the Autonomous Mecanum Robot (Autobot)
  *
- * This class handles odometry calculations for a mecanum drive robot,
+ * This class handles odometry calculations for the Autonomous Mecanum Robot (Autobot),
  * taking into account the unique kinematics of mecanum wheels that allow
  * for omnidirectional movement.
- *
- * @author Addison Sears-Collins
- * @date November 18, 2024
  */
 
 #ifndef MECANUM_DRIVE_CONTROLLER__ODOMETRY_HPP_

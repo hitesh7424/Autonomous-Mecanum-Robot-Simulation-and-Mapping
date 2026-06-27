@@ -1,9 +1,9 @@
 /**
  * @file test_load_mecanum_drive_controller.cpp
- * @brief Basic test to verify that the mecanum drive controller loads correctly
+ * @brief Basic test to verify that the Autonomous Mecanum Robot (Autobot) mecanum drive controller loads correctly
  *
  * This program tests if the mecanum drive controller can be loaded into the
- * ROS 2 Control framework. It uses the minimal robot URDF for testing and
+ * ROS 2 Control framework for the Autobot. It uses the minimal robot URDF for testing and
  * verifies that loading the controller does not throw any exceptions.
  *
  * Test Components:
@@ -11,9 +11,6 @@
  *     - Creates a controller manager
  *     - Attempts to load the mecanum drive controller
  *     - Verifies no exceptions are thrown during loading
- *
- * @author Addison Sears-Collins
- * @date November 19, 2024
  */
 
 // Google Mock for testing

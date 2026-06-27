@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """
-Launch Nav2 for the Yahboom ROSMASTER X3 robot in Gazebo.
+Launch Nav2 for the Autonomous Mecanum Robot (Autobot) in Gazebo.
 
-This launch file sets up a complete ROS 2 navigation environment.
-
-:author: Addison Sears-Collins
-:date: December 10, 2024
+This launch file sets up a complete ROS 2 navigation and mapping environment,
+including Gazebo simulation, EKF localization, and Nav2.
 """
 
 from launch import LaunchDescription

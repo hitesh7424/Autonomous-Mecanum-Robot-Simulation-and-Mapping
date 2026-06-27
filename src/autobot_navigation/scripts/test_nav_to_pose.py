@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
-ROS 2 node for sending a robot to different tables based on user input.
+ROS 2 node for sending the Autonomous Mecanum Robot (Autobot) to different tables based on user input.
 
 This script creates a ROS 2 node that continuously prompts the user to select a table
 number (1-5) in the cafe world and publishes the corresponding goal pose for the
-robot to navigate to. The script will keep running until the user enters 'q' or presses Ctrl+C.
+Autobot to navigate to. The script will keep running until the user enters 'q' or presses Ctrl+C.
 
 Publishing Topics:
     /goal_pose/goal (geometry_msgs/PoseStamped): The desired goal pose for the robot
-
-:author: Addison Sears-Collins
-:date: December 5, 2024
 """
 
 import rclpy

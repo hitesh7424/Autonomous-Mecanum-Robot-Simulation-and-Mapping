@@ -1,10 +1,10 @@
 /**
  * @file cmd_vel_relay.cpp
- * @brief Relay node that converts Twist messages to TwistStamped messages
+ * @brief Relay node that converts Twist messages to TwistStamped messages for the Autonomous Mecanum Robot (Autobot)
  *
  * This program subscribes to velocity commands published as Twist messages and
  * republishes them as TwistStamped messages. This is useful when interfacing
- * between different ROS2 nodes that expect different message types for velocity
+ * between different ROS 2 nodes for the Autobot that expect different message types for velocity
  * commands.
  *
  * Subscription Topics:
@@ -13,9 +13,6 @@
  * Publishing Topics:
  *     /mecanum_drive_controller/cmd_vel (geometry_msgs/TwistStamped):
  *     Timestamped velocity commands
- *
- * @author Addison Sears-Collins
- * @date November 30, 2024
  */
 
 // Include necessary header files

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Assisted Teleop Node for ROS 2 Navigation
+Assisted Teleop Node for Autonomous Mecanum Robot (Autobot) Navigation
 
-This script implements an Assisted Teleop node that interfaces with the Nav2 stack.
+This script implements an Assisted Teleop node that interfaces with the Nav2 stack for the Autobot.
 It manages the lifecycle of the AssistedTeleop action, handles cancellation requests,
 and periodically clears costmaps to remove temporary obstacles.
 
@@ -12,9 +12,6 @@ Subscription Topics:
 
 Parameters:
     ~/costmap_clear_frequency (double): Frequency in Hz for costmap clearing. Default: 2.0
-
-:author: Addison Sears-Collins
-:date: December 5, 2024
 """
 
 import rclpy
@@ -74,7 +71,7 @@ class AssistedTeleopNode(Node):
 
         # Wait for navigation to fully activate.
         if slam_enabled:
-            self.navigator.waitUntilNav2Active(localizer='robot_localization')
+            self.navigator.waitUntilNav2Active(localizer='slam_toolbox')
         else:
             self.navigator.waitUntilNav2Active(localizer='amcl')
 

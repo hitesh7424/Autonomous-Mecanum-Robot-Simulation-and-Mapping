@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """
-Launch ROS 2 controllers for the mecanum wheel robot.
+Launch ROS 2 controllers for the Autonomous Mecanum Robot (Autobot).
 
 This script creates a launch description that starts the necessary controllers
-for operating the mecanum wheel robot in a specific sequence.
+for operating the Autonomous Mecanum Robot (Autobot) in a specific sequence.
 
 Launched Controllers:
     1. Joint State Broadcaster: Publishes joint states to /joint_states
     2. Mecanum Drive Controller: Controls the robot's mecanum drive movements via ~/cmd_vel
-
-:author: Addison Sears-Collins
-:date: November 20, 2024
 """
 
 from launch import LaunchDescription
